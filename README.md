@@ -1,2 +1,2 @@
 # RED7Community Items
- Lol beacuse feck it. [NO LEAKING]
+By the way, it won't suddenly make the website.
