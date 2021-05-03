@@ -1,0 +1,12 @@
+# Blender MTL File: 'HatAvatar.blend'
+# Material Count: 1
+
+newmtl Material.001
+Ns 96.078443
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 0.254152 0.000000
+Ks 0.010417 0.010417 0.010417
+Ke 1.000000 0.390664 0.037073
+Ni 1.000000
+d 1.000000
+illum 2
