@@ -1,12 +1,35 @@
-.sidebar {
-  display: flex;
-  flex-wrap: nowrap;
-  height: 94vh;
+/*
+  File Name: style.css
+  Original Location: /assets/css/style.css
+  Description: The main CSS file.
+  Author: Mitchell (Creaous)
+  Copyright (C) RED7 STUDIOS 2021
+*/
+
+.center {
+	/* Set the margin to 0 */
+	margin: 0;
+	/* Set the position to absolute */
+	position: absolute;
+	/* Set the top to 50 percent */
+	top: 50%;
+	/* Set the left to 50 percent */
+	left: 50%;
+	/* Transform for mozilla browsers */
+	-ms-transform: translate(-50%, -50%);
+	/* Transform for other browsers */
+	transform: translate(-50%, -50%);
+}
+
+.force-to-bottom {
+  position:absolute;
+  bottom: 5%;
+  width: 100%;
 }
 
 .alert .alert-server {
-  margin-bottom: 0;
-  border-radius: 0;
+	margin-bottom: 0;
+	border-radius: 0;
 }
 
 .nav-tabs{
@@ -33,70 +56,70 @@ html, body {
 }
 
 .b-example-divider {
-  width: 1.5rem;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+	width: 1.5rem;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .1);
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 1px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
 }
 
 .bi {
-  vertical-align: -.125em;
-  pointer-events: none;
-  fill: currentColor;
+	vertical-align: -.125em;
+	pointer-events: none;
+	fill: currentColor;
 }
 
 .dropdown-toggle { outline: 0; }
 
 .nav-flush .nav-link {
-  border-radius: 0;
+	border-radius: 0;
 }
 
 .btn-toggle {
-  display: inline-flex;
-  align-items: center;
-  padding: .25rem .5rem;
-  font-weight: 600;
-  color: rgba(0, 0, 0, .65);
-  background-color: transparent;
-  border: 0;
+	display: inline-flex;
+	align-items: center;
+	padding: .25rem .5rem;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .65);
+	background-color: transparent;
+	border: 0;
 }
 .btn-toggle:hover,
 .btn-toggle:focus {
-  color: rgba(0, 0, 0, .85);
-  background-color: #d2f4ea;
+	color: rgba(0, 0, 0, .85);
+	background-color: #d2f4ea;
 }
 
 .btn-toggle::before {
-  width: 1.25em;
-  line-height: 0;
-  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-  transition: transform .35s ease;
-  transform-origin: .5em 50%;
+	width: 1.25em;
+	line-height: 0;
+	content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+	transition: transform .35s ease;
+	transform-origin: .5em 50%;
 }
 
 .btn-toggle[aria-expanded="true"] {
-  color: rgba(0, 0, 0, .85);
+	color: rgba(0, 0, 0, .85);
 }
 .btn-toggle[aria-expanded="true"]::before {
-  transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 .btn-toggle-nav a {
-  display: inline-flex;
-  padding: .1875rem .5rem;
-  margin-top: .125rem;
-  margin-left: 1.25rem;
-  text-decoration: none;
+	display: inline-flex;
+	padding: .1875rem .5rem;
+	margin-top: .125rem;
+	margin-left: 1.25rem;
+	text-decoration: none;
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-  background-color: #d2f4ea;
+	background-color: #d2f4ea;
 }
 
 .scrollarea {
-  overflow-y: auto;
+	overflow-y: auto;
 }
 
 .fw-semibold { font-weight: 600; }
@@ -123,13 +146,13 @@ html, body {
 }
 
 .rainbow-lr {
-  color: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
-  background-clip: text;
+	color: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+	background-clip: text;
 }
 .rainbow-td {
-  background: linear-gradient(to bottom, red, orange , yellow, green, cyan, blue, violet);
-  color:transparent;
-  background-clip: text;
+	background: linear-gradient(to bottom, red, orange , yellow, green, cyan, blue, violet);
+	color:transparent;
+	background-clip: text;
 }
 
 .title-rainbow-lr {
@@ -229,4 +252,9 @@ fieldset {
 	padding: 10px;
 	border: 1px solid black;
 	border-collapse: collapse;
+}
+
+.wrapper {
+  display: flex;
+  align-self: center;
 }
